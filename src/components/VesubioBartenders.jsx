@@ -1,6 +1,6 @@
-import React from 'react';
-import './VesubioBartenders.css';
-import cocktailImage from '../assets/01.jpg';
+import React from "react";
+import "./VesubioBartenders.css";
+import cocktailImage from "../assets/01.jpg";
 
 const VesubioBartenders = () => {
   return (
@@ -11,7 +11,7 @@ const VesubioBartenders = () => {
       {/* Lado izquierdo - Imagen */}
       <div className="bartenders-left">
         <div className="bartenders-image-wrapper">
-          <img 
+          <img
             src={cocktailImage}
             alt="Cocktail Premium"
             className="bartenders-image"
@@ -24,7 +24,6 @@ const VesubioBartenders = () => {
 
       {/* Lado derecho - Contenido */}
       <div className="bartenders-right">
-        
         {/* Header con líneas */}
         <div className="bartenders-header">
           <span className="header-line"></span>
@@ -34,24 +33,22 @@ const VesubioBartenders = () => {
 
         {/* Título grande */}
         <h1 className="bartenders-title">
-          EXPERTLY CRAFTED
-          <span className="highlight">in TRADITION,</span>
-          PERFECTED IN
-          <span className="highlight">INNOVATION.</span>
+          MAESTRÍA
+          <span className="highlight">EN CADA TRAGO,</span>
+          PERFECCIÓN
+          <span className="highlight">EN CADAEVENTO.</span>
         </h1>
 
         {/* Descripción */}
         <p className="bartenders-description">
-          Nuestros bartenders premium transforman cada evento en una experiencia inolvidable.
-          Cócteles artesanales, técnicas ancestrales y creatividad contemporánea se unen
-          para cautivar a tus invitados. Cada copa es una obra de arte.
+          Nuestros bartenders premium transforman cada evento en una experiencia
+          inolvidable. Cócteles artesanales, técnicas ancestrales y creatividad
+          contemporánea se unen para cautivar a tus invitados. Cada copa es una
+          obra de arte.
         </p>
 
         {/* Botón CTA */}
-        <button className="bartenders-cta">
-          RESERVAR EVENTO
-        </button>
-
+        <button className="bartenders-cta">RESERVAR EVENTO</button>
       </div>
     </section>
   );
