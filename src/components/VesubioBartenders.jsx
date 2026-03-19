@@ -1,56 +1,72 @@
-import React from "react";
+import { useState } from "react";
 import "./VesubioBartenders.css";
+import ModalConsulta from "./ModalConsulta/ModalConsulta.jsx";
 import cocktailImage from "../assets/01.jpg";
 
 const VesubioBartenders = () => {
-  return (
-    <section className="bartenders-section">
-      {/* Divisor vertical */}
-      <div className="bartenders-divider"></div>
+  const [modalAbierto, setModalAbierto] = useState(false);
 
-      {/* Lado izquierdo - Imagen */}
-      <div className="bartenders-left">
-        <div className="bartenders-image-wrapper">
-          <img
-            src={cocktailImage}
-            alt="Cocktail Premium"
-            className="bartenders-image"
-          />
-          <div className="image-caption">
-            <span className="caption-text">Mixología Artesanal</span>
+  return (
+    <>
+      <section className="bartenders-section">
+        {/* Divisor vertical */}
+        <div className="bartenders-divider"></div>
+
+        {/* Lado izquierdo - Imagen */}
+        <div className="bartenders-left">
+          <div className="bartenders-image-wrapper">
+            <img
+              src={cocktailImage}
+              alt="Cocktail Premium"
+              className="bartenders-image"
+            />
+            <div className="image-caption">
+              <span className="caption-text">Mixología Artesanal</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Lado derecho - Contenido */}
-      <div className="bartenders-right">
-        {/* Header con líneas */}
-        <div className="bartenders-header">
-          <span className="header-line"></span>
-          <span className="header-eyebrow">PREMIUM EXPERIENCE</span>
-          <span className="header-line"></span>
+        {/* Lado derecho - Contenido */}
+        <div className="bartenders-right">
+          {/* Header con líneas */}
+          <div className="bartenders-header">
+            <span className="header-line"></span>
+            <span className="header-eyebrow">PREMIUM EXPERIENCE</span>
+            <span className="header-line"></span>
+          </div>
+
+          {/* Título grande */}
+          <h1 className="bartenders-title">
+            MAESTRÍA
+            <span className="highlight">EN CADA TRAGO,</span>
+            PERFECCIÓN
+            <span className="highlight">EN CADAEVENTO.</span>
+          </h1>
+
+          {/* Descripción */}
+          <p className="bartenders-description">
+            Nuestros bartenders premium transforman cada evento en una experiencia
+            inolvidable. Cócteles artesanales, técnicas ancestrales y creatividad
+            contemporánea se unen para cautivar a tus invitados. Cada copa es una
+            obra de arte.
+          </p>
+
+          {/* Botón CTA */}
+          <button
+            className="bartenders-cta"
+            onClick={() => setModalAbierto(true)}
+          >
+            RESERVAR EVENTO
+          </button>
         </div>
+      </section>
 
-        {/* Título grande */}
-        <h1 className="bartenders-title">
-          MAESTRÍA
-          <span className="highlight">EN CADA TRAGO,</span>
-          PERFECCIÓN
-          <span className="highlight">EN CADAEVENTO.</span>
-        </h1>
-
-        {/* Descripción */}
-        <p className="bartenders-description">
-          Nuestros bartenders premium transforman cada evento en una experiencia
-          inolvidable. Cócteles artesanales, técnicas ancestrales y creatividad
-          contemporánea se unen para cautivar a tus invitados. Cada copa es una
-          obra de arte.
-        </p>
-
-        {/* Botón CTA */}
-        <button className="bartenders-cta">RESERVAR EVENTO</button>
-      </div>
-    </section>
+      <ModalConsulta
+        isOpen={modalAbierto}
+        onClose={() => setModalAbierto(false)}
+        whatsappNumero="5493815991845"
+      />
+    </>
   );
 };
 
