@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --blanco: #FAFAF9;
+  --beige-claro: #F5F1ED;
+  --negro: #1A1816;
+  --gris-oscuro: #4A4540;
+  --gris-medio: #6B6660;
+  --dorado: #C4A052;
+  --fuente-serif: 'Cormorant Garamond', serif;
+  --fuente-sans: 'Inter', sans-serif;
+}
+
+/* ═══════════════════════════════════════════════════════
+   NIGHTMIX FOOTER
+═══════════════════════════════════════════════════════ */
+
+.nightmix-footer {
+  width: 100%;
+  background: var(--negro);
+  padding: 4rem 2rem 2rem;
+  font-family: var(--fuente-sans);
+  border-top: 1px solid #2a2a28;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER BRANDING
+═══════════════════════════════════════════════════════ */
+
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--dorado);
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover .logo-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.logo-text {
+  font-family: var(--fuente-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--blanco);
+  letter-spacing: 0.1em;
+}
+
+.footer-subtitle {
+  font-family: var(--fuente-sans);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--gris-medio);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER INFO
+═══════════════════════════════════════════════════════ */
+
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  animation: fadeIn 0.8s ease-out 0.1s backwards;
+}
+
+.info-title {
+  font-family: var(--fuente-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dorado);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.info-text {
+  font-family: var(--fuente-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--gris-medio);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-text a {
+  color: var(--dorado);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-text a:hover {
+  color: var(--blanco);
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER SOCIALS
+═══════════════════════════════════════════════════════ */
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1.5px solid var(--dorado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dorado);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  font-size: 1.2rem;
+}
+
+.social-link:hover {
+  border-color: var(--blanco);
+  color: var(--blanco);
+  background: var(--dorado);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(196, 160, 82, 0.25);
+}
+
+.social-link svg {
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+  transform: scale(1.2);
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER DIVIDER
+═══════════════════════════════════════════════════════ */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dorado), transparent);
+  margin-bottom: 2rem;
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER BOTTOM
+═══════════════════════════════════════════════════════ */
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out 0.3s backwards;
+}
+
+.footer-copy {
+  font-family: var(--fuente-sans);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--gris-medio);
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--gris-medio);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--dorado);
+}
+
+.divider {
+  color: var(--gris-oscuro);
+}
+
+/* ═══════════════════════════════════════════════════════
+   ANIMACIONES
+═══════════════════════════════════════════════════════ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nightmix-footer {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    padding: 0 1rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nightmix-footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-logo {
+    gap: 0.6rem;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .info-item {
+    gap: 0.6rem;
+  }
+
+  .info-title {
+    font-size: 0.75rem;
+  }
+
+  .info-text {
+    font-size: 0.85rem;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+  }
+
+  .footer-links {
+    font-size: 0.7rem;
+  }
+}

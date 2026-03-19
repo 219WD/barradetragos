@@ -1,0 +1,401 @@
+/* CocktailExperience.css */
+
+.cocktail-experience-container {
+  background: #f5f1e8;
+  padding: 4rem 2rem;
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  overflow: hidden;
+}
+
+.cocktail-experience-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== SECCIÓN SUPERIOR ===== */
+
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+/* Imagen principal izquierda */
+.main-image-left {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 600px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.main-image-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card central */
+.center-card {
+  background: #e8dfc4;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #b8984a;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.premium-text {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d4af37;
+  font-style: italic;
+  margin-top: 0.5rem;
+  letter-spacing: 8px;
+}
+
+.card-image {
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 400px;
+  height: 500px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8b7355;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #6b5d4f;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.reserve-button {
+  background: linear-gradient(135deg, #b8984a 0%, #d4af37 100%);
+  color: white;
+  border: none;
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(184, 152, 74, 0.3);
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.reserve-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(184, 152, 74, 0.4);
+  background: linear-gradient(135deg, #d4af37 0%, #b8984a 100%);
+}
+
+.reserve-button:active {
+  transform: translateY(-1px);
+}
+
+.card-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.badge-icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #b8984a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.badge-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b8984a;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Imagen derecha superior */
+.side-image-right {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  margin-top: 3rem;
+}
+
+.side-image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== BARRA DECORATIVA ===== */
+
+.decorative-bar {
+  height: 100px;
+  background: linear-gradient(90deg, #b8984a 0%, #d4af37 50%, #b8984a 100%);
+  margin: 3rem 0;
+  border-radius: 8px;
+}
+
+/* ===== SECCIÓN INFERIOR ===== */
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Imagen izquierda inferior */
+.bottom-image-left {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bottom-image-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card de texto */
+.text-card {
+  background: #f9f6f0;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.text-card-title {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #b8984a;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text-card-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8b7355;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-card-description {
+  font-size: 0.95rem;
+  color: #6b5d4f;
+  line-height: 1.7;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Imagen interior central */
+.interior-image {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.interior-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Grid de imágenes pequeñas */
+.side-images-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.small-image {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 240px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.small-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.small-image:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1200px) {
+  .top-section {
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+  }
+
+  .side-image-right {
+    display: none;
+  }
+
+  .card-title {
+    font-size: 3rem;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .side-images-grid {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cocktail-experience-container {
+    padding: 2rem 1rem;
+  }
+
+  .top-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .main-image-left {
+    height: 400px;
+  }
+
+  .card-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .premium-text {
+    font-size: 1.8rem;
+    letter-spacing: 6px;
+  }
+
+  .card-image {
+    height: 400px;
+  }
+
+  .reserve-button {
+    padding: 1rem 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  .decorative-bar {
+    height: 60px;
+    margin: 2rem 0;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .text-card-title {
+    font-size: 2rem;
+  }
+
+  .interior-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .center-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .premium-text {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+  }
+
+  .card-image {
+    height: 350px;
+  }
+
+  .reserve-button {
+    width: 100%;
+    padding: 1.1rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .text-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .text-card-title {
+    font-size: 1.6rem;
+  }
+
+  .main-image-left,
+  .bottom-image-left,
+  .interior-image {
+    height: 350px;
+  }
+}
